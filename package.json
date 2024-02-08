@@ -6,7 +6,11 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "start": "node build/server.js",
-    "build": "tsup src --out-dir build"
+    "build": "tsup src --out-dir build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui"
   },
   "repository": {
     "type": "git",
@@ -21,10 +25,14 @@
   "homepage": "https://github.com/alerrandrojanio/nodejs-api-solid#readme",
   "devDependencies": {
     "@types/node": "20.11.0",
+    "@vitest/coverage-v8": "1.2.2",
+    "@vitest/ui": "1.2.2",
     "prisma": "5.8.0",
     "tsup": "8.0.1",
     "tsx": "4.7.0",
-    "typescript": "5.3.3"
+    "typescript": "5.3.3",
+    "vite-tsconfig-paths": "4.3.1",
+    "vitest": "1.2.1"
   },
   "dependencies": {
     "@prisma/client": "5.8.0",
