@@ -4,6 +4,17 @@ Content-Type: application/json
 
 {
   "name": "Alerrandro Janio",
-  "email": "alerrandro@gmail.com",
+  "email": "alerrandro22@gmail.com",
+  "password": "12345678"
+}
+
+###
+
+# @name authenticate-user
+POST http://localhost:3333/sessions
+Content-Type: application/json
+
+{
+  "email": "alerrandro22@gmail.com",
   "password": "12345678"
 }
